@@ -22,7 +22,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
 		BienvenidaResponse bienvenidaResponse = new BienvenidaResponse();
 
-		bienvenidaResponse.setUsuario(usuario.get(0) + "");
+		bienvenidaResponse.setUsuario(usuario.get(0).getUser() + "");
 		bienvenidaResponse.setSaludo("hola como estas !!");
 
 		return bienvenidaResponse;
